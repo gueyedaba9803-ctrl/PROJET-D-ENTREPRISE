@@ -1,73 +1,407 @@
-nav{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: rgb(252, 251, 251);
-    
+    background-color: rgba(2, 51, 10, 0.904);
+    padding: 20px;
+    z-index: 9999;
+
 }
-ul{
+
+ul {
     display: flex;
     list-style: none;
 
 }
-a{
-    margin: 10px;
-    font-size: 22px;
+
+a {
+    margin: 20px;
+    font-size: 20px;
     text-decoration: none;
-    color: rgb(5, 5, 241);
-    
+    color: rgba(238, 238, 83, 0.911);
+
 }
-section{
+
+.Accueil {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url('image/istockphoto-1478431022-1024x1024.jpg');
+    background-image: url('image/multi-storey-car-park-1271918_960_720.jpg');
     background-size: cover;
     background-position: center;
     flex-direction: column;
 }
-h2{
+
+h2 {
     font-size: 50px;
-    color:rgb(6, 6, 253);
+    color: rgba(2, 55, 10, 0.904);
     margin: 10px;
-    height: 15vh;
-}
-div{
-    
-    padding: 30px;
-    margin: 5px;
-    font-size: 30px;
-    color: blue;
+    height: 17vh;
 
 }
-button{
+
+.va {
+
+
+    color: rgba(238, 238, 83, 0.911);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+
+
+
+}
+
+button {
     padding: 10px;
-    background-color: blue;
+    background-color: rgba(2, 55, 10, 0.904);
     color: aliceblue;
 }
-h3{
-    color:rgb(12, 185, 238);
+
+h3 {
+    color: rgba(238, 238, 83, 0.911);
+    font-size: 30px;
+
+}
+
+.Voitures {
+    padding: 60px 20px;
+    background-color: rgba(238, 238, 83, 0.911);
+    text-align: center;
+}
+
+.Voitures h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: rgba(2, 55, 10, 0.904);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    border: 2px solid rgba(2, 55, 10, 0.904);
+
+
+}
+
+.blok {
+    display: flex;
+}
+
+.Services h1 {
+    color: rgba(2, 55, 10, 0.904);
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.Services {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 238, 83, 0.911);
+    flex-direction: column;
+
+
+}
+
+.bloc {
+    width: 350px;
+    border: 2px solid rgba(2, 55, 10, 0.904);
+    margin: 7px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.bloc img {
+    width: 100%;
+    height: 75%;
+    border-radius: 12px;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.ti a:hover {
+    
+    color: orangered;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+.Al{
+    text-decoration: underline;
+    color: orangered;
+}
+
+.pricing {
+    padding: 80px 20px;
+    background: rgba(238, 238, 83, 0.911);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.pricing-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.pricing h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(2, 55, 10, 0.904);
+}
+
+.moussa {
+    color:black;
+    margin-bottom: 50px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.pricing-card {
+    background: #ffffff;
+    color: black;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.prix {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(2, 55, 10, 0.904);
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+.ri{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgba(2, 55, 10, 0.904);
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #203a43;
+}
+.popular{
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff9800;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parking-security {
+    padding: 80px 20px;
+    background: rgba(238, 238, 83, 0.911);
+    font-family: Arial, sans-serif;
+}
+
+.security-gueye {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.parking-security h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(2, 55, 10, 0.904);
+}
+
+.daba {
+    font-size: 20px;
+    color:black;
+    margin-bottom: 50px;
+}
+
+.security-dd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.security-card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    border: 2px solid rgba(2, 55, 10, 0.904);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.security-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.security-card .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.security-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.security-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    color: rgba(2, 55, 10, 0.904);
     font-size: 20px;
 
 }
-.galarie {
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
 
-       .galarie div {
-            width: 350px;
-            margin: 10px;
-        }
+form {
+    width: 400px;
+    padding: 40px;
 
-       .galarie div img {
-            width: 100%;
-            border-radius: 10px;
+}
 
-        }
+.Contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 238, 83, 0.911);
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#group {
+    width: 47%;
+}
+
+
+
+label {
+    margin-left: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.for {
+    display: flex;
+}
+
+.Contact h1 {
+    color: rgba(2, 55, 10, 0.904);
+    font-size: 50px;
+}
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(2, 55, 10, 0.904);
+    color: white;
+    padding: 10px;
+
+
+}
+
+.liste {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+
+.bb img {
+    width: 15%;
+    height: 15%;
+
+}
+
+.ff p,
+.bb {
+    margin-left: 200px;
+}
+
+.ff {
+    margin-left: 200px;
+}
+
+.cc {
+    margin-left: 100px;
+
+}
+
+.ll {
+    margin-left: 100px;
+}
