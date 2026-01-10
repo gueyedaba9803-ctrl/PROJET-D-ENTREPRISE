@@ -1,0 +1,73 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(252, 251, 251);
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+
+}
+a{
+    margin: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(5, 5, 241);
+    
+}
+section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('image/istockphoto-1478431022-1024x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 50px;
+    color:rgb(6, 6, 253);
+    margin: 10px;
+    height: 15vh;
+}
+div{
+    
+    padding: 30px;
+    margin: 5px;
+    font-size: 30px;
+    color: blue;
+
+}
+button{
+    padding: 10px;
+    background-color: blue;
+    color: aliceblue;
+}
+h3{
+    color:rgb(12, 185, 238);
+    font-size: 20px;
+
+}
+.galarie {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+       .galarie div {
+            width: 350px;
+            margin: 10px;
+        }
+
+       .galarie div img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
